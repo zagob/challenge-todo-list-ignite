@@ -1,0 +1,39 @@
+.content {
+  max-width: 736px;
+  margin: 0 auto;
+}
+
+.contentInput {
+  margin-top: -32px;
+  display: flex;
+  justify-content: center;
+  height: 3.375rem;
+  gap: 8px;
+
+  button {
+    width: 90px;
+    background: var(--blueDark);
+    color: var(--gray-100);
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+
+    transition: background-color 0.2s;
+
+    &:disabled {
+      filter: brightness(0.5);
+      cursor: not-allowed;
+    }
+
+    &:not(:disabled):hover {
+      background: var(--blue);
+      cursor: pointer;
+    }
+  }
+}
